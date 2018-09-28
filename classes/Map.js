@@ -74,8 +74,7 @@ class Map {
   }
 
   addBlock(block) {
-    const pos = this.coordToTile({x:block.x,y:block.y})
-    this.tiles[pos.y][pos.x] = block
+    this.tiles[block.tileY][block.tileX] = block
   }
 
   getSize() {
